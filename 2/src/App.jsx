@@ -5,6 +5,8 @@ import logo from './assets/logo.png'
 import icons from './assets/h-ic.png'
 import background from './assets/banner.png'
 import './App.css'
+import Banner from "./Banner.jsx";
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -28,15 +30,9 @@ function App() {
           </div>
        
       </div>
-      <div className="banner">
-      <img src={background} className="" alt="Vite logo" />
-      <div className="asd">
-        <h1 className="banner-title">Title de lini</h1>
-      <p className="subtitle">БРЕНД ОДЕЖДЫ</p>
-      <button class="banner-button">Перейти в категории</button>
-      </div>
+      <Banner/>
       
-      </div>
+  
     </>
   )
 }
